@@ -1,37 +1,12 @@
 ---@meta _
----@alias AceGUILayoutType
----|"Flow"
----|"List"
----|"Fill"
----|"Table"
+---@alias AceGUILayoutType string |"'Flow'" |"'List'" |"'Fill'" |"'Table'"
 
----@alias AceGUIWidgetType
----|"BlizOptionsGroup"
----|"Button"
----|"CheckBox"
----|"ColorPicker"
----|"Dropdown"
----|"EditBox"
----|"Heading"
----|"Icon"
----|"InteractiveLabel"
----|"Keybinding"
----|"Label"
----|"MultiLineEditBox"
----|"Slider"
+---@alias AceGUIWidgetType string |"'BlizOptionsGroup'" |"'Button'" |"'CheckBox'" |"'ColorPicker'" |"'Dropdown'" |"'EditBox'" |"'Heading'" |"'Icon'" |"'InteractiveLabel'" |"'Keybinding'" |"'Label'" |"'MultiLineEditBox'" |"'Slider'"
 
----@alias AceGUIContainerType
----|"DropdownGroup"
----|"Frame"
----|"InlineGroup"
----|"ScrollFrame"
----|"SimpleGroup"
----|"TabGroup"
----|"TreeGroup"
----|"Window"
+---@alias AceGUIContainerType string |"'DropdownGroup'" |"'Frame'" |"'InlineGroup'" |"'ScrollFrame'" |"'SimpleGroup'" |"'TabGroup'" |"'TreeGroup'" |"'Window'"
 
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-gui-3-0)
----@class AceGUI-3.0
+---@class AceGUI_3_0
 ---@field tooltip GameTooltip
 local AceGUI = {}
 
@@ -47,7 +22,7 @@ function AceGUI:Create(type) end
 ---@return function
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-gui-3-0#title-4)
 function AceGUI:GetLayout(Name) end
-
+AceGUI:GetLayout()
 ---@param type string
 ---@return number
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-gui-3-0#title-5)
@@ -97,8 +72,8 @@ function AceGUI:SetFocus(widget) end
 ---@field protected frame Frame
 ---@field protected userdata table
 ---@field protected events table<string,function>
----@field protected width? string|number
----@field protected height? string|number
+---@field protected width string|number|nil
+---@field protected height string|number|nil
 local AceGUIWidget = {}
 
 ---@param name string
@@ -132,10 +107,10 @@ function AceGUIWidget:Release() end
 ---@param point FramePoint
 ---@param relativeTo Region|string
 ---@param relativePoint string
----@param ofsx? number
----@param ofsy? number
----@overload fun(self, point: FramePoint, relativeTo: Region|string, ofsx?: number, ofsy?: number)
----@overload fun(self, point: FramePoint, ofsx?: number, ofsy?: number)
+---@param ofsx number|nil
+---@param ofsy number|nil
+---@overload fun(self, point: FramePoint, relativeTo: Region|string, ofsx: number|nil, ofsy: number|nil)
+---@overload fun(self, point: FramePoint, ofsx: number|nil, ofsy: number|nil)
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_Region_SetPoint)
 function AceGUIWidget:SetPoint(point, relativeTo, relativePoint, ofsx, ofsy) end
 
@@ -202,7 +177,7 @@ function AceGUIWidget:IsReleasing() end
 local AceGUIContainer = {}
 
 ---@param widget AceGUIWidget
----@param beforeWidget? AceGUIWidget
+---@param beforeWidget AceGUIWidget|nil
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/ace-gui-3-0-widgets#title-3-1)
 function AceGUIContainer:AddChild(widget, beforeWidget) end
 

@@ -1,0 +1,52 @@
+--- @alias UnitClassID number
+--- @alias UnitClassName string
+
+--- @class UnitClassType
+--- @field id UnitClassID The unit class identifier
+--- @field name UnitClassName | "'DRUID'" | "'WARRIOR'" | "'etc...'" | "'The unit class name in uppercase.'"
+
+--- @class UnitClassesType
+--- @field WARRIOR UnitClassType
+--- @field PALADIN UnitClassType
+--- @field HUNTER UnitClassType
+--- @field ROGUE UnitClassType
+--- @field PRIEST UnitClassType
+--- @field DEATHKNIGHT UnitClassType
+--- @field SHAMAN UnitClassType
+--- @field MAGE UnitClassType
+--- @field WARLOCK UnitClassType
+--- @field MONK UnitClassType
+--- @field DRUID UnitClassType
+--- @field DEMONHUNTER UnitClassType
+--- @field EVOKER UnitClassType
+
+--- ## Example use for strongly-typed coding.
+--- ```
+--- local UnitClassID = {
+---    WARRIOR = 1,
+---    PALADIN = 2,
+---    HUNTER = 3,
+---    ROGUE = 4,
+---    PRIEST = 5,
+---    DEATHKNIGHT = 6,
+---    SHAMAN = 7,
+---    MAGE = 8,
+---    WARLOCK = 9,
+---    MONK = 10,
+---    DRUID = 11,
+---    DEMONHUNTER = 12,
+---    EVOKER = 13,
+--- }
+--- local UnitClasses = {}
+--- for className, classID in pairs(UnitClassID) do
+---   local entry = { id = classID, name = className, }
+---   setmetatable(entry, { __call = function(self) return self.name end })
+---   UnitClasses[className] = entry
+--- end
+--- ```
+---
+--- ```
+--- if UnitClasses.DRUID() == 'DRUID' then ... end
+--- ```
+--- @type UnitClassesType
+local UnitClasses = {}

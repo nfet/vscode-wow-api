@@ -4,7 +4,7 @@
 -- AceTab-3.0
 -- ----------------------------------------------------------------------------
 
----@class AceTab-3.0
+---@class AceTab_3_0
 local AceTab = {}
 
 -- stylua: ignore start

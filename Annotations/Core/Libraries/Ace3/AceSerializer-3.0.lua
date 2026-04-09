@@ -1,5 +1,5 @@
 ---@meta _
----@class AceSerializer-3.0
+---@class AceSerializer_3_0
 local AceSerializer = {}
 
 ---@param str string The serialized data (from :Serialize)

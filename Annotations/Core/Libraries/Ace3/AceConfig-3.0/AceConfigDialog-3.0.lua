@@ -1,11 +1,11 @@
 ---@meta _
----@class AceConfigDialog-3.0
+---@class AceConfigDialog_3_0
 ---@field OpenFrames table<string, table>
 ---@field Status table<string, table>
 ---@field tooltip GameTooltip
 local AceConfigDialog = {}
 
----@class AceConfigDialog-3.0.frame : Frame
+---@class AceConfigDialog_3_0.frame : Frame
 ---@field apps table
 ---@field closing table
 ---@field closeAllOverride table
@@ -14,9 +14,9 @@ AceConfigDialog.frame = {}
 ---@paramsig appName, name, parent, ...
 --- Add an option table into the Blizzard Interface Options panel
 ---@param appName string The application name as given to `:RegisterOptionsTable()`
----@param name? string A descriptive name to display in the options tree. Defaults to appName
----@param parent? string The parent to use in the interface options tree
----@param ...? string The path in the options table to feed into the interface options panel
+---@param name string|nil A descriptive name to display in the options tree. Defaults to appName
+---@param parent string|nil The parent to use in the interface options tree
+---@param ... string The path in the options table to feed into the interface options panel
 ---@return any # The reference to the frame registered into the Interface Options.
 ---@return any # The registered category ID
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-config-dialog-3-0#title-1)
@@ -35,8 +35,8 @@ function AceConfigDialog:CloseAll() end
 ---@paramsig appName, container, ...
 ---Open an option winddow at the specified path, if any
 ---@param appName string The application name as given to `:RegisterOptionsTable()`
----@param container? table
----@param ...? string The path to open after creating the options window (see `:SelectGroup` for details)
+---@param container table|nil
+---@param ... string The path to open after creating the options window (see `:SelectGroup` for details)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-config-dialog-3-0#title-4)
 function AceConfigDialog:Open(appName, container, ...) end
 

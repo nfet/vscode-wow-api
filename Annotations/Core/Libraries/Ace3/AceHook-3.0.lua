@@ -1,10 +1,4 @@
----@meta _
-
--- ----------------------------------------------------------------------------
--- AceHook-3.0
--- ----------------------------------------------------------------------------
-
----@class AceHook-3.0
+---@class AceHook_3_0
 ---@field hooks { [table]: { [string]: function } } | { [string]: function }
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0)
 local AceHook = {}
@@ -20,8 +14,8 @@ local AceHook = {}
 -- This type of hook is typically used if you need to know if some function got called, and don't want to modify it.
 ---@param object table The object to hook a method from
 ---@param method string The name of the object method to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
----@param hookSecure? boolean If true, AceHook will allow hooking of secure functions.
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param hookSecure boolean|nil If true, AceHook will allow hooking of secure functions.
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-1)
 function AceHook:Hook(object, method, handler, hookSecure) end
 
@@ -31,8 +25,8 @@ function AceHook:Hook(object, method, handler, hookSecure) end
 --
 -- This type of hook is typically used if you need to know if some function got called, and don't want to modify it.
 ---@param method string The name of the function to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
----@param hookSecure? boolean If true, AceHook will allow hooking of secure functions.
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param hookSecure boolean|nil If true, AceHook will allow hooking of secure functions.
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-1)
 function AceHook:Hook(method, handler, hookSecure) end
 
@@ -43,7 +37,7 @@ function AceHook:Hook(method, handler, hookSecure) end
 -- This is the frame script equivalent of the :Hook safe-hook. It would typically be used to be notified when a certain event happens to a frame.
 ---@param frame Frame The Frame to hook the script on
 ---@param script ScriptFrame The script to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-2)
 function AceHook:HookScript(frame, script, handler) end
 
@@ -71,8 +65,8 @@ function AceHook:IsHooked(method) end
 -- This type of hook can be used for all purposes, and is usually the most common case when you need to modify arguments or want to control execution of the original function.
 ---@param object table The object to hook a method from
 ---@param method string The name of the object method to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
----@param hookSecure? boolean If true, AceHook will allow hooking of secure functions.
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param hookSecure boolean|nil If true, AceHook will allow hooking of secure functions.
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-4)
 function AceHook:RawHook(object, method, handler, hookSecure) end
 
@@ -84,8 +78,8 @@ function AceHook:RawHook(object, method, handler, hookSecure) end
 --
 -- This type of hook can be used for all purposes, and is usually the most common case when you need to modify arguments or want to control execution of the original function.
 ---@param method string The name of the function to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
----@param hookSecure? boolean If true, AceHook will allow hooking of secure functions.
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param hookSecure boolean|nil If true, AceHook will allow hooking of secure functions.
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-4)
 function AceHook:RawHook(method, handler, hookSecure) end
 
@@ -98,7 +92,7 @@ function AceHook:RawHook(method, handler, hookSecure) end
 -- This type of hook can be used for all purposes, and is usually the most common case when you need to modify arguments or want to control execution of the original script.
 ---@param frame Frame The Frame to hook the script on
 ---@param script ScriptFrame The script to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-5)
 function AceHook:RawHookScript(frame, script, handler) end
 
@@ -109,7 +103,7 @@ function AceHook:RawHookScript(frame, script, handler) end
 -- Secure Hooks should be used if the secure-status of the function is vital to its function, and taint would block execution. Secure Hooks are always called after the original function was called ("Post Hook"), and you cannot modify the arguments, return values or control the execution.
 ---@param object table The object to hook a method from
 ---@param method string The name of the object method to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-6)
 function AceHook:SecureHook(object, method, handler) end
 
@@ -119,7 +113,7 @@ function AceHook:SecureHook(object, method, handler) end
 --
 -- Secure Hooks should be used if the secure-status of the function is vital to its function, and taint would block execution. Secure Hooks are always called after the original function was called ("Post Hook"), and you cannot modify the arguments, return values or control the execution.
 ---@param method string The name of the function to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked function)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-6)
 function AceHook:SecureHook(method, handler) end
 
@@ -130,7 +124,7 @@ function AceHook:SecureHook(method, handler) end
 -- Secure Hooks should be used if the secure-status of the function is vital to its function, and taint would block execution. Secure Hooks are always called after the original function was called ("Post Hook"), and you cannot modify the arguments, return values or control the execution.
 ---@param frame Frame The Frame to hook the script on
 ---@param script ScriptFrame The script to hook
----@param handler? function|string The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
+---@param handler function|string|nil The handler for the hook, a funcref or a method name. (Defaults to the name of the hooked script)
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-7)
 function AceHook:SecureHookScript(frame, script, handler) end
 
@@ -150,3 +144,10 @@ function AceHook:Unhook(method) end
 -- Unhook all existing hooks for this addon.
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0#title-9)
 function AceHook:UnhookAll() end
+
+---@generic T
+---@param target T target object to embed AceEvent in
+---@return T|AceHook_3_0 augmentedTarget
+--- ---
+---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-hook-3-0)
+function AceHook:Embed(target) end

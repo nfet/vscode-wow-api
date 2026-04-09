@@ -1,0 +1,21 @@
+--[[-------------------------------------------------------------------
+ObjectPoolBaseMixin
+--- Base mixin shared by secure and unsecured object pools.
+--- Handles acquire/release lifecycle and active tracking.
+---
+--- NOTE:
+--- - Objects in the pool are tables
+--- - Concrete storage is implemented by derived mixins
+--- @see Ketho/Pools.lua.annotated
+---------------------------------------------------------------------]]
+--- @class ObjectPoolBaseMixin
+--- @field capacity number
+--- @field Acquire fun(self: ObjectPoolBaseMixin): table|nil, boolean
+--- @field Release fun(self: ObjectPoolBaseMixin, object: table, canFailToFindObject?: boolean): boolean
+--- @field ReleaseAll fun(self: ObjectPoolBaseMixin)
+--- @field EnumerateActive fun(self: ObjectPoolBaseMixin): fun(): table
+--- @field GetNextActive fun(self: ObjectPoolBaseMixin, current: table|nil): table|nil
+--- @field IsActive fun(self: ObjectPoolBaseMixin, object: table): boolean
+--- @field GetNumActive fun(self: ObjectPoolBaseMixin): number
+--- @field Dump fun(self: ObjectPoolBaseMixin)
+

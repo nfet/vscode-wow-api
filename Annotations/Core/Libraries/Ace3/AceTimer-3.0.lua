@@ -7,7 +7,7 @@
 ---@field delay number delay in seconds
 ---@field ends number GetTime() + delay,
 
----@class AceTimer-3.0
+---@class AceTimer_3_0
 local AceTimer = {}
 
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-timer-3-0#title-1)
