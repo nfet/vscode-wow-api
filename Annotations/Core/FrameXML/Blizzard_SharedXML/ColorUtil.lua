@@ -1,11 +1,29 @@
 ---@meta _
 
 ---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromHexString)
----@param hexColor string
+---@param hexColor string @Supports ARGB format
 ---@return colorRGBA
 function CreateColorFromHexString(hexColor) end
 
+---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromBestRGBHexString)
+---@since 1.15.xxx
+---@param hexColor string @Supports RGBA(#000000ff)
+---@return colorRGBA
+function CreateColorFromRGBAHexString(hexColor) end
+---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromBestRGBHexString)
+---@since 1.15.xxx
+---@param hexColor string @Supports RGB (#000000)
+---@return colorRGBA
+function CreateColorFromRGBHexString(hexColor) end
+
+---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromBestRGBHexString)
+---@since 12.xx
+---@param hexColor string @Supports both RGBA(#000000ff) and RGB (#000000)
+---@return colorRGBA
+function CreateColorFromBestRGBHexString(hexColor) end
+
 ---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromBytes)
+---@since 1.15.xxx
 ---@param r number
 ---@param g number
 ---@param b number
