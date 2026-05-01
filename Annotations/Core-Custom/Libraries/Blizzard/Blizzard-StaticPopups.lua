@@ -1,3 +1,14 @@
+--- @class StaticPopupDialog : Frame
+--- @field text FontString The dialog message text
+--- @field button1 Button The first action button (e.g. ADD/YES)
+--- @field button2 Button The second action button (e.g. CANCEL/NO)
+--- @field button3 Button The optional third action button
+--- @field EditBox EditBox The input field (when hasEditBox = 1)
+--- @field icon Texture The dialog icon texture
+--- @field checkButton CheckButton The optional checkbox (when hasCheckButton = 1)
+--
+--
+
 --- Shows a static popup dialog defined in StaticPopupDialogs.
 ---
 --- @param which string                      -- Key of StaticPopupDialogs entry

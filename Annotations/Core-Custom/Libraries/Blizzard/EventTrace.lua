@@ -1,6 +1,13 @@
+--[[-------------------------------------------------------------------
+Components:
+  EventTrace.SubtitleBar.ViewLog,
+  EventTrace.SubtitleBar.ViewFilter,
+  EventTrace.SubtitleBar.OptionsDropdown
+---------------------------------------------------------------------]]
 --- @class EventTrace : Frame
 --- @field SubtitleBar EventTrace_SubtitleBar
 --- @field Log EventTrace_Log
+--- @field LogEvent fun(self:EventTrace, ...):void
 
 --- @class EventTrace_SubtitleBar : Frame
 --- @field ViewFilter Button
