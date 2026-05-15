@@ -1,0 +1,5 @@
+--- @class ItemCooldownInfo
+--- @see SpellCooldownInfo
+--- @field startTime number
+--- @field duration number
+--- @field isEnabled boolean

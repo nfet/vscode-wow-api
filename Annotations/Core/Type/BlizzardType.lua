@@ -35,7 +35,7 @@
 ---@alias SingleColorValue number
 ---@alias size number
 ---@alias SoundHandle number
----@alias SpellIdentifier number|string
+---@alias SpellIdentifier number|string | "Smite" | 585
 ---@alias StoreError number
 ---@alias stringView string
 ---@alias TextureAsset fileID|string|Texture

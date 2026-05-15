@@ -4,7 +4,8 @@
 ---@field Default Settings.Default
 ---@field CategorySet table
 ---@field CommitFlag table
-local S = {}
+local S = {}; Settings = S
+
 
 ---@class Settings.VarType
 ---@field Boolean string
