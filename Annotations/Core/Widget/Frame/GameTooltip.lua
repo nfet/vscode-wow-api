@@ -251,7 +251,8 @@ function GameTooltip:SetBagItemChild() end
 function GameTooltip:SetBuybackItem(slot) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_SetCompanionPet)
-function GameTooltip:SetCompanionPet() end
+--- @param petGUID string @The battle pet GUID (e.g. 'BattlePet-0-0000001837A7')
+  function GameTooltip:SetCompanionPet(petGUID) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_SetCompareAzeritePower)
 function GameTooltip:SetCompareAzeritePower(itemID, itemLevel, powerID, owningItemLink) end
@@ -326,7 +327,8 @@ function GameTooltip:SetMerchantCostItem(index, item) end
 function GameTooltip:SetMerchantItem(merchantSlot) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_SetMountBySpellID)
-function GameTooltip:SetMountBySpellID() end
+---@param spellID SpellIdentifier
+function GameTooltip:SetMountBySpellID(spellIdentifier) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_SetOwnedItemByID)
 function GameTooltip:SetOwnedItemByID(ID) end

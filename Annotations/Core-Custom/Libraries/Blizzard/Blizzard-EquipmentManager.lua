@@ -1,0 +1,12 @@
+--- @alias EquipmentSetID number
+
+--- @class EquipmentSetDetails
+--- @field name string
+--- @field iconID number
+--- @field id EquipmentSetID
+--- @field isEquipped boolean
+--- @field numItems number
+--- @field numEquipped number
+--- @field numInInventory number
+--- @field numLost number
+--- @field numIgnored number
