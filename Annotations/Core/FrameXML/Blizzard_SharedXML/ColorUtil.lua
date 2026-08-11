@@ -1,4 +1,16 @@
 ---@meta _
+---@see https://www.townlong-yak.com/framexml/era/Blizzard_SharedXML/ColorUtil.lua
+
+COLOR_FORMAT_RGBA = "RRGGBBAA";
+COLOR_FORMAT_RGB = "RRGGBB";
+COLOR_FORMAT_ARGB = "AARRGGBB";
+FONT_COLOR_CODE_CLOSE = "|r";
+
+--- [ColorUtil.lua](https://www.townlong-yak.com/framexml/era/Blizzard_SharedXML/ColorUtil.lua#6)
+--- @return number The decimal color value
+--- @param str string
+--- @param index number
+local function ExtractColorValueFromHex(str, index) end
 
 ---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromHexString)
 ---@param hexColor string @Supports ARGB format
