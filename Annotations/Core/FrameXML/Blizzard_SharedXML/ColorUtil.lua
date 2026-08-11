@@ -10,7 +10,7 @@ FONT_COLOR_CODE_CLOSE = "|r";
 --- @return number The decimal color value
 --- @param str string
 --- @param index number
-local function ExtractColorValueFromHex(str, index) end
+function ExtractColorValueFromHex(str, index) end
 
 ---[FrameXML](https://www.townlong-yak.com/framexml/go/CreateColorFromHexString)
 ---@param hexColor string @Supports ARGB format
