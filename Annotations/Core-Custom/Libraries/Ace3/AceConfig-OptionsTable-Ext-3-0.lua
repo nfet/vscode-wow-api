@@ -1,0 +1,39 @@
+--- Option keys AceConfig accepts that the upstream
+--- `AceConfig.OptionsTable` annotation lacks. Source: `basekeys` and
+--- `typedkeys` in AceConfigRegistry-3.0.lua. Delete a field here once
+--- upstream declares it (it then shows as a duplicate).
+--- [Documentation](https://www.wowace.com/projects/ace3/pages/ace-config-3-0-options-tables)
+--- @class (partial) AceConfig.OptionsTable
+--- @field arg? any                                     @Free value; handlers get it as info.arg
+--- @field relWidth? number                             @Width relative to the parent, 0 to 1
+--- @field tooltipHyperlink? string|function            @Hyperlink shown as the tooltip
+--- @field control? string                              @Custom AceGUI widget type, any UI
+--- @field dialogControl? string                        @Custom AceGUI widget type in dialogs
+--- @field dropdownControl? string                      @Custom AceGUI widget type in dropdowns
+--- @field itemControl? string                          @select: custom widget type per entry
+--- @field min? number                                  @range
+--- @field max? number                                  @range
+--- @field softMin? number                              @range: slider minimum; typed values may go below
+--- @field softMax? number                              @range: slider maximum; typed values may go above
+--- @field step? number                                 @range: smallest change
+--- @field bigStep? number                              @range: slider step; typed values may use step
+--- @field isPercent? boolean                           @range: shows 0.5 as 50%
+--- @field values? table|function|string                @select, multiselect: key to display text
+--- @field sorting? table|function|string               @select: keys in display order
+--- @field style? 'dropdown'|'radio'                    @select, multiselect
+--- @field tristate? boolean                            @toggle, multiselect: allows a nil state
+--- @field pattern? string                              @input: Lua pattern the value must match
+--- @field usage? string                                @input: shown when the pattern fails
+--- @field multiline? boolean|number                    @input: number sets the line count
+--- @field plugins? table                               @group: extra args tables, by plugin name
+--- @field inline? boolean                              @group: drawn inside its parent
+--- @field cmdInline? boolean                           @group: inline on the command line only
+--- @field guiInline? boolean                           @group: inline in dialogs and dropdowns
+--- @field dialogInline? boolean                        @group: inline in dialogs only
+--- @field dropdownInline? boolean                      @group: inline in dropdowns only
+--- @field image? string|number|function                @description, execute, toggle
+--- @field imageCoords? table|string|function           @Arguments for SetTexCoord
+--- @field imageWidth? number                           @description, execute
+--- @field imageHeight? number                          @description, execute
+--- @field fontSize? 'small'|'medium'|'large'|function  @description
+--- @field hasAlpha? boolean|string|function            @color: shows the opacity slider
