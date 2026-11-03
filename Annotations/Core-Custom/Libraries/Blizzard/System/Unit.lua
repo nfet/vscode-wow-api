@@ -1,3 +1,5 @@
+---@meta _
+
 --[[-----------------------------------------------------------------------------
 Unit Aliases
 -------------------------------------------------------------------------------]]
@@ -85,8 +87,8 @@ function UnitAura(unit, index, filter) end
 --- Returns information about the specified buff on a unit.
 --- @param unit string The unit to query (e.g., "player", "target").
 --- @param index number The index of the buff to query, starting at 1.
---- @param filter string|nil Optional. A filter to restrict the buffs to query (e.g., "CANCELABLE", "NOT_CANCELABLE").
---- @return BuffName, Count, number|nil, string|nil, number|nil, number|nil, number|nil, boolean|nil, boolean|nil, number|nil, boolean|nil, boolean|nil, boolean|nil, number|nil name, icon, count, debuffType, duration, expirationTime, source, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossAura, castByPlayer, timeMod The buff information.
+--- @param filter string? Optional. A filter to restrict the buffs to query (e.g., "CANCELABLE", "NOT_CANCELABLE").
+--- @return BuffName, Count, number?, string?, number?, number?, number?, boolean?, boolean?, number?, boolean?, boolean?, boolean?, number? name, icon, count, debuffType, duration, expirationTime, source, isStealable, nameplateShowPersonal, spellId, canApplyAura, isBossAura, castByPlayer, timeMod The buff information.
 function UnitBuff(unit, index, filter) end
 
 --- Returns the name of the unit.
