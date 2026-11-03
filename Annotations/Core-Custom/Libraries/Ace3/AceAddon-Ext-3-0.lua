@@ -1,10 +1,7 @@
---- @class AceAddon-Ext-3-0
-local ext = {}
+---@meta _
 
----[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-addon-3-0#title-9)
----Return an iterator of all modules associated to the addon.
----@return fun, table, number iter, invariant, init
-function ext:IterateModules() end
+--- @class (partial) AceAddon
+local addon = {}
 
 ---[Source Code](https://github.com/hurricup/WoW-Ace3/blob/619cd1532d404f75ad4c20fbcefab6aed11e4abe/AceAddon-3.0/AceAddon-3.0.lua#L473)
 --- Returns an iterator of the libraries embedded into the addon.
@@ -16,8 +13,4 @@ function ext:IterateModules() end
 ---end
 ---```
 --- @return fun():number,string @An iterator yielding the index and the library name.
-function ext:IterateEmbeds() end
-
---- @return string
-function ext:GetName() end
-
+function addon:IterateEmbeds() end

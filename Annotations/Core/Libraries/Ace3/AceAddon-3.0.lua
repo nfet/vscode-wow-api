@@ -4,7 +4,7 @@
 -- AceAddon-3.0
 -- ----------------------------------------------------------------------------
 
----@class AceAddon-3.0 : AceAddon-Ext-3-0
+---@class AceAddon-3.0
 --
 --- ---
 ---[Documentation](https://www.wowace.com/projects/ace3/pages/api/ace-addon-3-0)
