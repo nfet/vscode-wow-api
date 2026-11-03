@@ -1,0 +1,2 @@
+--- @class AddonNamespace
+--- @field addon AddOnName
