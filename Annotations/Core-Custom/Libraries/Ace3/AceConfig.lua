@@ -1,5 +1,4 @@
 --[[-----------------------------------------------------------------------------
 Types
 -------------------------------------------------------------------------------]]
---- @deprecated Use `AceConfig.OptionsTable`.
---- @alias AceConfigOption AceConfig.OptionsTable
+--- @alias AceConfigOption AceConfig.OptionsTable @deprecated Use `AceConfig.OptionsTable`
