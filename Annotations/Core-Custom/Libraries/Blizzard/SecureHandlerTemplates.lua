@@ -1,10 +1,8 @@
---- @see FrameXML/SecureHandlerTemplates.xml
---
---
 --- @alias SecureFrameTemplateObj SecureFrameTemplate | FrameObj
 --- @alias SecureHandlerBaseTemplateObj SecureHandlerBaseTemplate | SecureFrameTemplateObj
 --
 --- @class SecureHandlerBaseTemplate : SecureFrameTemplate
+--- @see FrameXML/SecureHandlerTemplates.xml
 local S = {}
 
 --- Executes a secure snippet in the restricted environment.
