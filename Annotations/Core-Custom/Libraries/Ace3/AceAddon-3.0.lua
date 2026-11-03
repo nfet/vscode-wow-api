@@ -1,3 +1,5 @@
+---@meta _
+
 --- @alias Addon_Type1_Libs AceConsole_3_0 | AceEvent_3_0 | AceBucket_3_0
 --- @alias Addon_Type2_Libs Addon_Type1_Libs | AceHook_3_0
 --- @alias AceAddonObj_3_0_Type1  AceAddonObj_3_0 | Addon_Type1_Libs

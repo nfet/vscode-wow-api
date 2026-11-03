@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class IconButtonMixin : UIButtonMixin
 --- @field Icon TextureObj
 --- @field icon IconIDOrPath?

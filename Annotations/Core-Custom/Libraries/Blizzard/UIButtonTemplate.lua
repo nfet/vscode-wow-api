@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class UIButtonMixin
 --- @field buttonArtKit string?
 --- @field disabledTooltip string?

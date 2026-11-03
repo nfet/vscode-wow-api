@@ -1,3 +1,5 @@
+---@meta _
+
 --[[-------------------------------------------------------------------
 ObjectPoolBaseMixin
 --- Base mixin shared by secure and unsecured object pools.

@@ -1,3 +1,5 @@
+---@meta _
+
 ---@class SettingsCategoryMixin
 ---@field ID number
 ---@field name string

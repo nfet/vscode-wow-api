@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class ItemCooldownInfo
 --- @see SpellCooldownInfo
 --- @field startTime number

@@ -1,3 +1,5 @@
+---@meta _
+
 --- Sets the color of all textures and buttons in a chat frame window.
 --- Iterates over `CHAT_FRAME_TEXTURES` and applies the RGB vertex color to each
 --- texture or button's normal/highlight/pushed textures. Optionally persists the

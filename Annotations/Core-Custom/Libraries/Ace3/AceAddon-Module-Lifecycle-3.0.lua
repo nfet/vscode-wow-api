@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class AceAddon-Module-Lifecycle-3-0
 local addonOrModule = {}
 

@@ -1,3 +1,5 @@
+---@meta _
+
 --- @type number The number of character bag slots
 NUM_BAG_SLOTS = {}
 

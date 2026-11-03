@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class UIDropDownMenuFrame : Frame
 --- @field displayMode string
 --- @field initialize fun(self: Frame, level: number)

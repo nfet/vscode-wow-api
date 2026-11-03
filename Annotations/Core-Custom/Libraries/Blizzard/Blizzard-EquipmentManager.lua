@@ -1,3 +1,5 @@
+---@meta _
+
 --- @alias EquipmentSetID number
 
 --- @class EquipmentSetDetails

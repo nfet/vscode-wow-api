@@ -1,3 +1,5 @@
+---@meta _
+
 ---@class Settings
 ---@field CannotDefault any
 ---@field VarType Settings.VarType

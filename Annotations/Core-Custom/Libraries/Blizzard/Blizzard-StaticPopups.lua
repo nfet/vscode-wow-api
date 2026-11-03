@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class StaticPopupDialog : Frame
 --- @field text FontString The dialog message text
 --- @field button1 Button The first action button (e.g. ADD/YES)

@@ -1,3 +1,5 @@
+---@meta _
+
 --[[
 Hierarchy Explanation:
  • UIObject: The base class for all UI elements in World of Warcraft.

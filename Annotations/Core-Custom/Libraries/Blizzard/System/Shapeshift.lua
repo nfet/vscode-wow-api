@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class ShapeshiftFormData
 --- @field index number          @Shapeshift form index
 --- @field icon number           @Texture fileID of the form icon

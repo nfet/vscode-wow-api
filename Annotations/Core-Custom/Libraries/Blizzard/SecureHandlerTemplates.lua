@@ -1,3 +1,5 @@
+---@meta _
+
 --- @alias SecureFrameTemplateObj SecureFrameTemplate | FrameObj
 --- @alias SecureHandlerBaseTemplateObj SecureHandlerBaseTemplate | SecureFrameTemplateObj
 --

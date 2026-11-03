@@ -1,3 +1,5 @@
+---@meta _
+
 local function Logger_Def()
     --- @class Logger
     local o = {}

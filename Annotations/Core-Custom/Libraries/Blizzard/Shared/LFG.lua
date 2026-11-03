@@ -1,3 +1,5 @@
+---@meta _
+
 --- See Also:
 --- - Interface\AddOns\Blizzard_LookingForGroupUI\Blizzard_LFGParentFrame.lua
 --- - Interface\AddOns\Blizzard_LookingForGroupUI\Blizzard_LFGBrowse.lua

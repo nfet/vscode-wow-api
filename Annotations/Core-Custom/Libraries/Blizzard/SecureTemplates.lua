@@ -1,3 +1,5 @@
+---@meta _
+
 --- @alias SecureActionButtonTemplateObj SecureActionButtonTemplate | SecureFrameTemplateObj | ButtonObj
 --- @alias SecureCheckButtonObj SecureActionButtonTemplateObj | CheckButtonObj
 --

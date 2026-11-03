@@ -1,3 +1,5 @@
+---@meta _
+
 -- aliases for emmy lua
 --- @alias FrameObj Frame|ScriptRegion|ScriptRegionResizing|AnimatableObject|ScriptObject
 --- @alias FrameObjWithBackdrop FrameObj|BackdropTemplate

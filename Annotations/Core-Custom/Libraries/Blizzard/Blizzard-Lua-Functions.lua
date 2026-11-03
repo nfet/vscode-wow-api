@@ -1,3 +1,5 @@
+---@meta _
+
 --- A non-fatal assertion that routes failures through the error handler instead of hard-erroring.
 --- @see Blizzard_SharedXMLBase/ErrorUtil.lua
 --- @param condition boolean                            @The condition to assert

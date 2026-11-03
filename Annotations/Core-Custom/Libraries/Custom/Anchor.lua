@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class Anchor
 --- @field point RegionPointString | "'TOPLEFT'" | "'TOPRIGHT'" | "'BOTTOMLEFT'" | "'BOTTOMRIGHT'" | "'TOP'" | "'BOTTOM'" | "'LEFT'" | "'RIGHT'" | "'CENTER'"
 --- @field relativeTo any

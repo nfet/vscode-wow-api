@@ -1,3 +1,5 @@
+---@meta _
+
 --- @class FrameUtil
 local F = {}
 

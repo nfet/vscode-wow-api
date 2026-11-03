@@ -1,3 +1,5 @@
+---@meta _
+
 ---@alias CursorType string | "'spell'" | "'item'" | "'macro'" | "'mount'" | "'companion'" | "'battlepet'" | "'petaction'" | "'flyout'" | "'equipmentset'" | "'toy'" | "'money'" | "'currency'" | "'merchant'" | "'worldmap'" | "'talent'" | "'profession'" | "'glyph'" | "'battlepetability'" | "'keystone'" | "'azeritepower'" | "'transmogappearance'" | "'transmogillusion'" | "'voidstorage'" | "'petspell'" | "'conduit'" | "'runeforgepower'" | "'traitconfig'" | "'traitentry'" | "'professionrecipe'" | "'craftingorder'" | "'craftingenchant'" | "'craftingreagent'" | "'craftingquality'" | "'socket'" | "'quest'" | "'garrisonbuilding'" | "'garrisonspecialization'" | "'heirloom'" | "'pet'" | "'achievement'" | "'scenario'" | "'calendar'" | "'mail'" | "'auction'"
 ---@alias CursorAdditionalInfo (string|number|boolean)?
 

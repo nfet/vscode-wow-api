@@ -1,3 +1,5 @@
+---@meta _
+
 --- Option keys AceConfig accepts that the upstream
 --- `AceConfig.OptionsTable` annotation lacks. Source: `basekeys` and
 --- `typedkeys` in AceConfigRegistry-3.0.lua. Delete a field here once
