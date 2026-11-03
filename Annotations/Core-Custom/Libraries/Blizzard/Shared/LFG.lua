@@ -102,20 +102,3 @@ local activityInfoTable = {
     useDungeonRoleExpectations = true,
     useHonorLevel = true,
 }
-
----``` local name, groupType, isHeroic, isChallengeMode, displayHeroic, displayMythic, toggleDifficultyID = GetDifficultyInfo(id) ```
---- #### See
---- - GetDifficultyInfo(id:number)
---- - [https://warcraft.wiki.gg/wiki/API_GetDifficultyInfo](https://warcraft.wiki.gg/wiki/API_GetDifficultyInfo)
---- - [https://warcraft.wiki.gg/wiki/DifficultyID](https://warcraft.wiki.gg/wiki/DifficultyID)
---- @class DifficultyInfo
-local difficultyInfo = {
-    name = "10 Player (Heroic)",
-    --- @type GroupType
-    groupType = 'party',
-    isHeroic = true,
-    isChallengeMode = true,
-    displayHeroic = true,
-    displayMythic = true,
-    toggleDifficultyID = 1,
-}
