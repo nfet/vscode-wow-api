@@ -7,7 +7,7 @@
 --- @param r number The red component of the color (0.0 – 1.0).
 --- @param g number The green component of the color (0.0 – 1.0).
 --- @param b number The blue component of the color (0.0 – 1.0).
---- @param doNotSave boolean|nil When `true`, skips saving the color with `SetChatWindowColor`.
+--- @param doNotSave boolean? When `true`, skips saving the color with `SetChatWindowColor`.
 function FCF_SetWindowColor(frame, r, g, b, doNotSave) end
 
 --- Sets the alpha transparency of all textures in a chat frame window.
@@ -17,5 +17,5 @@ function FCF_SetWindowColor(frame, r, g, b, doNotSave) end
 --- @see [FloatingChatFrame](https://www.townlong-yak.com/framexml/ptr/Blizzard_ChatFrameBase/Mainline/FloatingChatFrame.lua#845)
 --- @param frame Frame The chat frame whose window alpha will be set.
 --- @param alpha number The alpha transparency value (0.0 = fully transparent, 1.0 = fully opaque).
---- @param doNotSave boolean|nil When `true`, skips saving the alpha with `SetChatWindowAlpha`.
+--- @param doNotSave boolean? When `true`, skips saving the alpha with `SetChatWindowAlpha`.
 function FCF_SetWindowAlpha(frame, alpha, doNotSave) end

@@ -19,9 +19,9 @@ function S:WrapScript(frame, script, preBody, postBody) end
 --- Removes a previously installed wrapper.
 --- @param frame Frame
 --- @param script string
---- @return Frame|nil header
---- @return string|nil preBody
---- @return string|nil postBody
+--- @return Frame? header
+--- @return string? preBody
+--- @return string? postBody
 function S:UnwrapScript(frame, script) end
 
 --- Stores a secure frame reference.

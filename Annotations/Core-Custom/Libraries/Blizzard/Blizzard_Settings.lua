@@ -39,8 +39,8 @@ function S:RegisterAddOnCategory(category) end
 function S:SetKeybindingsCategory(category) end
 
 ---@param categoryID number|string
----@param scrollToElementName string|nil
----@return boolean|nil
+---@param scrollToElementName string?
+---@return boolean?
 function S:OpenToCategory(categoryID, scrollToElementName) end
 
 ----------------------------------------------------
@@ -49,8 +49,8 @@ function S:OpenToCategory(categoryID, scrollToElementName) end
 
 ---@param categoryTbl any
 ---@param variable string
----@param variableKey string|nil
----@param variableTbl table|nil
+---@param variableKey string?
+---@param variableTbl table?
 ---@param variableType string
 ---@param name string
 ---@param defaultValue any
@@ -91,7 +91,7 @@ function S:GetValue(variable) end
 
 ---@param variable string
 ---@param value any
----@param force boolean|nil
+---@param force boolean?
 function S:SetValue(variable, value, force) end
 
 ---@param variable string
@@ -131,13 +131,13 @@ function S:CreateDropdown(category, setting, options, tooltip) end
 
 ---@param variable string
 ---@param callback fun(owner:any, setting:any, value:any)
----@param owner any|nil
+---@param owner any?
 ---@return any
 function S:SetOnValueChangedCallback(variable, callback, owner) end
 
 ---@param variable string
 ---@param callback fun(value:any)
----@param owner any|nil
+---@param owner any?
 function S:CallWhenRegistered(variable, callback, owner) end
 
 ---@return boolean

@@ -2,12 +2,12 @@
 ---@field ID number
 ---@field name string
 ---@field order number
----@field parentCategory SettingsCategoryMixin|nil
----@field categorySet any|nil
+---@field parentCategory SettingsCategoryMixin?
+---@field categorySet any?
 ---@field subcategories SettingsCategoryMixin[]
 ---@field tutorial { tooltip:any, callback:fun()|nil }|nil
----@field expanded boolean|nil
----@field shouldSortAlphabetically boolean|nil
+---@field expanded boolean?
+---@field shouldSortAlphabetically boolean?
 local S = {}
 
 ----------------------------------------------------
@@ -43,10 +43,10 @@ function S:GetQualifiedName() end
 -- Parent / Hierarchy
 ----------------------------------------------------
 
----@return SettingsCategoryMixin|nil
+---@return SettingsCategoryMixin?
 function S:GetParentCategory() end
 
----@param category SettingsCategoryMixin|nil
+---@param category SettingsCategoryMixin?
 function S:SetParentCategory(category) end
 
 ---@return boolean
@@ -56,10 +56,10 @@ function S:HasParentCategory() end
 -- Category Set
 ----------------------------------------------------
 
----@param categorySet any|nil
+---@param categorySet any?
 function S:SetCategorySet(categorySet) end
 
----@return any|nil
+---@return any?
 function S:GetCategorySet() end
 
 ----------------------------------------------------
@@ -73,7 +73,7 @@ function S:GetSubcategories() end
 function S:HasSubcategories() end
 
 ---@param name string
----@param description string|nil
+---@param description string?
 ---@return SettingsCategoryMixin
 function S:CreateSubcategory(name, description) end
 
@@ -95,14 +95,14 @@ function S:GetCategoryTutorialInfo() end
 ---@param expanded boolean
 function S:SetExpanded(expanded) end
 
----@return boolean|nil
+---@return boolean?
 function S:IsExpanded() end
 
 ----------------------------------------------------
 -- Sorting
 ----------------------------------------------------
 
----@return boolean|nil
+---@return boolean?
 function S:ShouldSortAlphabetically() end
 
 ---@param should boolean

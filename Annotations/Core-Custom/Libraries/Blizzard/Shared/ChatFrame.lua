@@ -20,8 +20,8 @@ local A = {}
 ---@param r number Red component of the text color (0-1).
 ---@param g number Green component of the text color (0-1).
 ---@param b number Blue component of the text color (0-1).
----@param chatLineID string|nil The unique identifier for the chat line, used for chat copying and other features.
----@param holdTime number|nil How long to hold the message in seconds before it fades out.
+---@param chatLineID string? The unique identifier for the chat line, used for chat copying and other features.
+---@param holdTime number? How long to hold the message in seconds before it fades out.
 function A:AddMessage(message, r, g, b, chatLineID, holdTime) end
 
 ---Sets the font size for the chat frame.

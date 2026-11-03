@@ -39,28 +39,28 @@ function F:ReflectStandardScriptHandlers(frame) end
 function F:RegisterForVariablesLoaded(frame, loadMethod) end
 
 ---@param frame Frame
----@return Frame|nil
+---@return Frame?
 function F:GetRootParent(frame) end
 
----@param name string|nil
----@param parent Frame|nil
----@param template string|nil
+---@param name string?
+---@param parent Frame?
+---@param template string?
 ---@return Frame
 function F:CreateFrame(name, parent, template) end
 
 ---@param frame Frame
----@param extraWidth number|nil
----@param extraHeight number|nil
+---@param extraWidth number?
+---@param extraHeight number?
 function F:UpdateScaleForFit(frame, extraWidth, extraHeight) end
 
 ---@param frame Frame
----@param specificWidth number|nil
----@param specificHeight number|nil
+---@param specificWidth number?
+---@param specificHeight number?
 function F:UpdateScaleForFitSpecific(frame, specificWidth, specificHeight) end
 
 ---@param frame Frame
----@param minScale number|nil
----@param maxScale number|nil
+---@param minScale number?
+---@param maxScale number?
 function F:ApplyDefaultScale(frame, minScale, maxScale) end
 
 ---@param parent Frame

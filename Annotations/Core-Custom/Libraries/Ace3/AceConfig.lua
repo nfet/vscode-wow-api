@@ -1,19 +1,5 @@
 --[[-----------------------------------------------------------------------------
 Types
 -------------------------------------------------------------------------------]]
---- @class AceConfigOption
---- @field disabled boolean Puts the config option in a read-only or gray state
---- @field type string | "'group'" | "'range'" | "'select'" | "'multiselect'" | "'toggle'" | "'input'" | "'header'" | "'description'" | "'color'" | "'keybinding'" | "The type of the option ('group', 'range', 'select', 'toggle', 'input', etc.)"
---- @field name string The name of the option displayed in the configuration GUI.
---- @field desc string The description of the option displayed in the configuration GUI.
---- @field descStyle string | "'inline'"
---- @field order number The order in which the option appears in the GUI.
---- @field fontSize NonNegativeNumber|string | "'small'" | "'medium'" | "'large'" | "The size of the text. Three pre-defined values are allowed: "large", "medium", "small". Defaults to "small".
---- @field get fun(option): any A function that returns the current value of the option.
---- @field set fun(option, value) A function that sets the new value of the option.
---- @field args table<string, AceConfigOption>|nil The arguments for the option, used if type is 'group'.
---- @field min number|nil The minimum value for 'range' type options.
---- @field max number|nil The maximum value for 'range' type options.
---- @field step number|nil The step size for 'range' type options.
---- @field values table<any, string>|fun():table<any, string>|nil A table or function returning a table mapping each possible value to a string for 'select' type options.
---- @field width string|nil | "'normal'" | "'full'" | "'double'" | "'half'" | "1.1" | "1.5" | "The width of the option element ('full', 'double', 'half', etc.)"
+--- @deprecated Use `AceConfig.OptionsTable`.
+--- @alias AceConfigOption AceConfig.OptionsTable

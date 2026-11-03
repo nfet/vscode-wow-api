@@ -20,7 +20,7 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias BookTypeOptional BookType
 --- @alias CooldownType string | "spell" | "item" | "macro"
 --- @alias Count Number
---- @alias CreatureDisplayInfoID number|nil
+--- @alias CreatureDisplayInfoID number?
 --- @alias DataProviderFilterFn fun(elem:DataProviderElement) : Boolean | "function(elem) return true end"
 --- @alias DataProviderHandlerFn fun(elem:DataProviderElement) | "function(elem) print('elem:', pformat(elem)) end"
 --- @alias Description string
@@ -30,7 +30,7 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias EndTime number | "1.0" | "In Milliseconds"
 --- @alias EnumString string An enumerated string value
 --- @alias EventName string Blizzard Event Name
---- @alias Faction number|nil
+--- @alias Faction number?
 --- @alias FontName string | "GameFontNormal" | "GameFontNormalMed1" | "GameFontNormalOutline" | "QuestFontNormalHuge" | "GameFontHighlight" | "GameTooltipTextSmall" | "NumberFontNormalSmall"
 --- @alias HandlerFn fun(arg:any) | "function(arg) end"
 --- @alias HandlerFnNoArg fun() | "function() end"
@@ -57,7 +57,7 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias NumberOfMounts Number
 --- @alias ObjectType string | "Frame" | "Button" | "FontString"
 --- @alias OptionalTable table
---- @alias OptionalTimeDelayInMilli number|nil The time delay in milliseconds
+--- @alias OptionalTimeDelayInMilli number? The time delay in milliseconds
 --- @alias OriginalIcon Icon The original icon texture for this spell
 --- @alias PredicateFn fun() : boolean | "function() return true end"
 --- @alias RegionPointString string | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
@@ -81,7 +81,7 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias TimeInSec number The time in second(s)
 --- @alias Title string
 --- @alias UiModelSceneID number
---- @alias UseError string|nil
+--- @alias UseError string?
 
 --[[-----------------------------------------------------------------------------
 Booleans

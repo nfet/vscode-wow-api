@@ -4,31 +4,31 @@ Structures
 --- @alias UIDropDownMenuButton __UIDropDownMenuButton | Button
 
 --- @class UIDropDownMenuButtonInfo
---- @field text string|nil Text shown in the dropdown
---- @field value any|nil Value passed to the click handler
+--- @field text string? Text shown in the dropdown
+--- @field value any? Value passed to the click handler
 --- @field func fun(self:UIDropDownMenuButton, arg1:any, arg2:any, checked:boolean)|nil Click handler
 --- @field checked boolean|fun(value:any):boolean|nil Checked state
---- @field disabled boolean|nil Whether the entry is disabled
---- @field isNotRadio boolean|nil If true, checkbox instead of radio button
---- @field notCheckable boolean|nil If true, hides the check mark
---- @field icon number|string|nil Icon texture or fileID
---- @field iconOnly boolean|nil Shows icon without text
---- @field iconInfo table|nil Advanced icon settings (rare)
---- @field tooltipTitle string|nil Tooltip title
---- @field tooltipText string|nil Tooltip body text
---- @field tooltipOnButton boolean|nil Show tooltip on button instead of menu
---- @field minWidth number|nil Minimum width of the menu entry
---- @field maxWidth number|nil Maximum width of the menu entry
---- @field justifyH string|nil "LEFT" | "CENTER" | "RIGHT"
---- @field owner Frame|nil Owner frame (used internally)
---- @field hasArrow boolean|nil Whether this entry has a submenu
---- @field menuList table|nil Submenu entries
---- @field keepShownOnClick boolean|nil Prevent menu from closing on click
---- @field noClickSound boolean|nil Suppress click sound
---- @field xOffset number|nil Horizontal offset of the menu
---- @field yOffset number|nil Vertical offset of the menu
---- @field anchorName string|nil Frame name used for anchoring
---- @field anchorPoint FramePoint|nil Anchor point for submenu
+--- @field disabled boolean? Whether the entry is disabled
+--- @field isNotRadio boolean? If true, checkbox instead of radio button
+--- @field notCheckable boolean? If true, hides the check mark
+--- @field icon (number|string)? Icon texture or fileID
+--- @field iconOnly boolean? Shows icon without text
+--- @field iconInfo table? Advanced icon settings (rare)
+--- @field tooltipTitle string? Tooltip title
+--- @field tooltipText string? Tooltip body text
+--- @field tooltipOnButton boolean? Show tooltip on button instead of menu
+--- @field minWidth number? Minimum width of the menu entry
+--- @field maxWidth number? Maximum width of the menu entry
+--- @field justifyH string? "LEFT" | "CENTER" | "RIGHT"
+--- @field owner Frame? Owner frame (used internally)
+--- @field hasArrow boolean? Whether this entry has a submenu
+--- @field menuList table? Submenu entries
+--- @field keepShownOnClick boolean? Prevent menu from closing on click
+--- @field noClickSound boolean? Suppress click sound
+--- @field xOffset number? Horizontal offset of the menu
+--- @field yOffset number? Vertical offset of the menu
+--- @field anchorName string? Frame name used for anchoring
+--- @field anchorPoint FramePoint? Anchor point for submenu
 
 --[[-----------------------------------------------------------------------------
 Methods
@@ -55,15 +55,15 @@ UIDropDownMenuButton
 -------------------------------------------------------------------------------]]
 --- @class __UIDropDownMenuButton
 --- @field value any                     Value associated with this menu entry
---- @field owner Frame|nil               Owner frame (usually the dropdown)
---- @field arg1 any|nil                  Optional argument passed to func
---- @field arg2 any|nil                  Optional argument passed to func
---- @field checked boolean|nil           Cached checked state
---- @field isNotRadio boolean|nil        True if checkbox instead of radio
---- @field notCheckable boolean|nil      True if checkmark is hidden
---- @field icon Texture|nil              Optional icon texture
---- @field tooltipTitle string|nil       Tooltip title
---- @field tooltipText string|nil        Tooltip body text
---- @field hasArrow boolean|nil          Whether this button opens a submenu
---- @field menuList table|nil            Submenu entries
+--- @field owner Frame?               Owner frame (usually the dropdown)
+--- @field arg1 any?                  Optional argument passed to func
+--- @field arg2 any?                  Optional argument passed to func
+--- @field checked boolean?           Cached checked state
+--- @field isNotRadio boolean?        True if checkbox instead of radio
+--- @field notCheckable boolean?      True if checkmark is hidden
+--- @field icon Texture?              Optional icon texture
+--- @field tooltipTitle string?       Tooltip title
+--- @field tooltipText string?        Tooltip body text
+--- @field hasArrow boolean?          Whether this button opens a submenu
+--- @field menuList table?            Submenu entries
 --- @field func fun(self:UIDropDownMenuButton, arg1:any, arg2:any, checked:boolean)|nil
