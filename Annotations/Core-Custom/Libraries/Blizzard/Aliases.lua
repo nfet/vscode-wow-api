@@ -25,7 +25,6 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias DataProviderHandlerFn fun(elem:DataProviderElement) | "function(elem) print('elem:', pformat(elem)) end"
 --- @alias Description string
 --- @alias DisplayText string
---- @alias DrawLayer EnumString | "BACKGROUND" | "BORDER" | "ARTWORK" | "OVERLAY"  | "HIGHLIGHT"
 --- @alias Duration number | "1.0"
 --- @alias Enable number | "0" | "1"
 --- @alias EndTime number | "1.0" | "In Milliseconds"
@@ -33,9 +32,6 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias EventName string Blizzard Event Name
 --- @alias Faction number|nil
 --- @alias FontName string | "GameFontNormal" | "GameFontNormalMed1" | "GameFontNormalOutline" | "QuestFontNormalHuge" | "GameFontHighlight" | "GameTooltipTextSmall" | "NumberFontNormalSmall"
---- @alias FrameEvent string | "PLAYER_LOG_IN" | "PLAYER_LOG_OUT" | "PLAYER_CONTROL_LOST" | "PLAYER_CONTROL_GAINED" | "PLAYER_STARTED_MOVING" | "PLAYER_STOPPED_MOVING" | "etc..."
---- @alias FramePoint RegionPointString | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
---- @alias FrameType string | "Frame" | "Button" | "CheckButton" | "Cooldown" | "Editbox" | "GameTooltip" | "ScrollFrame" | "Slider" | "MessageFrame"
 --- @alias HandlerFn fun(arg:any) | "function(arg) end"
 --- @alias HandlerFnNoArg fun() | "function() end"
 --- @alias HexColor string | "FFEEA0A0" | "AARRGGBB"
@@ -66,7 +62,6 @@ The reason why the AddOn cannot be loaded. This is nil if the addon is loadable,
 --- @alias PredicateFn fun() : boolean | "function() return true end"
 --- @alias RegionPointString string | "TOPLEFT" | "TOPRIGHT" | "BOTTOMLEFT" | "BOTTOMRIGHT" | "TOP" | "BOTTOM" | "LEFT" | "RIGHT" | "CENTER"
 --- @alias RegionReference Region | "string" | "UIParent" | "FrameNameOrObj"
---- @alias ScriptType string | "OnEvent" | "OnShow" | "OnHide" | "OnClick" | "OnDoubleClick" | "OnDragStart" | "OnDragStop" | "OnReceiveDrag" | "PreClick" | "PostClick" | "OnLoad" | "OnUpdate" | "OnFinished" | "OnLoop" | "OnPause" | "OnPlay" | "OnStop" | "OnAttributeChanged" | "OnChar" | "OnEnable" | "OnDisable" | "OnEnter" | "OnLeave" | "OnKeyUp" | "OnKeyDown" | "OnMouseDown" | "OnMouseUp" | "OnMouseWheel" | "OnEnterPressed" | "OnEscapePressed" | "OnTabPressed" | "OnSpacePressed" | "OnCursorChanged" | "OnEditFocusGained" | "OnEditFocusLost" | "OnTextChanged" | "OnTextSet"  | "OnTooltipSetItem" | "OnValueChanged"
 --- @alias ScriptTypeEventHandler fun(self:any, event:string) | "function(self, event) print(Event received:, event) end"
 --- @alias SoundChannel string | "SFX" | "Effects" | "Music" | "Ambience" | "Dialog" | "Master"
 --- @alias Source string
@@ -133,7 +128,6 @@ Booleans
 --[[-----------------------------------------------------------------------------
 Frame
 -------------------------------------------------------------------------------]]
---- @alias FrameStrata string | "WORLD" | "BACKGROUND" | "LOW" | "MEDIUM" | "HIGH" | "DIALOG" | "FULLSCREEN" | "FULLSCREEN_DIALOG" | "TOOLTIP"
 --- @alias FrameLevel number | "1" | "10" | "100" | "200"
 
 --[[-----------------------------------------------------------------------------
@@ -209,11 +203,9 @@ Difficulty ID: @see https://warcraft.wiki.gg/wiki/DifficultyID
 --- @alias LFGActivities table<number, LFGActivityID>
 --- @alias QuestID number
 --- @alias QuestLogIndex number
---- @alias QuestObjectiveType string | "item" | "monster"
 
 --[[-----------------------------------------------------------------------------
 FloatingChatFrame
 -------------------------------------------------------------------------------]]
---- @alias ChatType string | "SAY" | "YELL" | "WHISPER" | "PARTY" | "RAID" | "GUILD" | "OFFICER" | "ACHIEVEMENT" | "EMOTE" | "CHANNEL" | "SYSTEM" | "BN_WHISPER" | "BN_CONVERSATION" | "BN_ALERT" | "BN_BROADCAST" | "BN_INLINE_TOAST_ALERT" | "COMBAT_GUILD_XP_GAIN" | "COMBAT_HONOR_GAIN" | "COMBAT_FACTION_CHANGE" | "LOOT" | "MONEY" | "COMBAT_MISC_INFO" | "COMBAT_XP_GAIN" | "PET_INFO" | "PET_BATTLE_COMBAT_LOG" | "PET_BATTLE_INFO" | "INSTANCE_CHAT" | "INSTANCE_CHAT_LEADER" | "RAID_WARNING" | "RAID_BOSS_WHISPER" | "RAID_LEADER" | "BG_SYSTEM_NEUTRAL" | "BG_SYSTEM_ALLIANCE" | "BG_SYSTEM_HORDE" | "PVP" | "ARENA_POINTS"
 
 --- @alias NoOpFn fun() : void
