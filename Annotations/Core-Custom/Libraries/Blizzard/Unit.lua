@@ -1,4 +1,3 @@
---- @alias UnitClassID number
 --- @alias UnitClassName string
 
 --- @class UnitClassType
