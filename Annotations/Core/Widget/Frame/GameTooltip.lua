@@ -29,17 +29,22 @@ function GameTooltip:HookScript(scriptType, handler, bindingType) end
 function GameTooltip:SetScript(scriptType, handler) end
 
 
----@class TextureInfoTable
----@field width number
----@field height number
----@field anchor Enum.TooltipTextureAnchor
----@field margin TextureInfoTable.margin
+--- @class TextureInfoTable
+--- @field width? number
+--- @field height? number
+--- @field anchor? Enum.TooltipTextureAnchor
+--- @field region? Enum.TooltipTextureRelativeRegion @Line the anchor is relative to
+--- @field margin? TextureInfoTable.margin
+--- @field verticalOffset? number
+--- @field vertexColor? { r: number, g: number, b: number, a?: number }
+--- @field desaturation? number                      @0 to 1
+--- @field texCoords? { left: number, right: number, top: number, bottom: number }
 
----@class TextureInfoTable.margin
----@field left number
----@field right number
----@field top number
----@field bottom number
+--- @class TextureInfoTable.margin
+--- @field left? number
+--- @field right? number
+--- @field top? number
+--- @field bottom? number
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_AddAtlas)
 ---@param atlas string
@@ -76,7 +81,9 @@ function GameTooltip:AddFontStrings(leftstring, rightstring) end
 function GameTooltip:AddLine(tooltipText, r, g, b, wrapText) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_AddTexture)
-function GameTooltip:AddTexture(texture) end
+--- @param texture string|number @File path or file ID
+--- @param textureSettings? TextureInfoTable
+function GameTooltip:AddTexture(texture, textureSettings) end
 
 ---[Documentation](https://warcraft.wiki.gg/wiki/API_GameTooltip_AppendText)
 ---@param text string
